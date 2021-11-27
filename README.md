@@ -9,7 +9,7 @@ Other things to try include adding and removing layers to test if any kind of ov
 
 # File Purposes:
 
-hw_5 - The original NN trained without any experimentation. Base conditions for images collected from all the tracks. This is our control model.
+hw_5 - The original NN trained without any experimentation. Base conditions for images collected from all the tracks. This is our control model
 
 base_files - Used only to reset our project after each training session.
 
