@@ -37,13 +37,14 @@ class Planner(torch.nn.Module):
       layers.append(torch.nn.ReLU())
       layers.append(torch.nn.Conv2d(12, 12, 5, 1, 2))
       layers.append(torch.nn.ReLU())
-      layers.append(torch.nn.Conv2d(12, 9, 4, 1, 0))
+      layers.append(torch.nn.Conv2d(12, 9, 4, 1, 0)) #12 is input, 9 is output, 4 is kernel size, 1 stirde, 0 is padding
       layers.append(torch.nn.ReLU())
       layers.append(torch.nn.MaxPool2d(kernel_size=3, stride=1))
-     
+      #formula input - kernal_size + 2*padding + stride
       layers.append(torch.nn.MaxPool2d(kernel_size=3, stride=1))
       layers.append(torch.nn.MaxPool2d(kernel_size=3, stride=1))
       layers.append(torch.nn.MaxPool2d(kernel_size=2, stride=1))
+
       #layers.append(torch.nn.ReLU())
       self._conv = torch.nn.Sequential(*layers)
      # self.pool = torch.nn.MaxPool2d(kernel_size=2, stride=2)

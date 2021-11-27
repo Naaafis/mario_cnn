@@ -13,8 +13,4 @@ hw_5 - The original NN trained without any experimentation. Base conditions for 
 
 base_files - Used only to reset our project after each training session.
 
-testing_files - Where I could try out the variety of strategies
-
-image_collection - As the name suggests, this will be the files used to collect the images
-
 cnn_extras - these files could be pasted into testing_files in order to get the testing_files ready for training
